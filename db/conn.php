@@ -2,7 +2,7 @@
 
 $host = '185.61.153.117';
 $db = 'attendance';
-$user = 'olivdkff';
+$user = 'olivdkff_attendance';
 $pass = 'y19lIohRcEkm';
 $charset = 'utf8mb4';
 
