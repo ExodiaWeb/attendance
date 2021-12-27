@@ -1,6 +1,6 @@
 <?php 
 
-$host = '185.61.153.117';
+$host = '185.61.153.114';
 $db = 'olivdkff_demo';
 $user = 'olivdkff_login';
 $pass = 'SobaGPozwzhf';
