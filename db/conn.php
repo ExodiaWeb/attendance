@@ -1,9 +1,9 @@
 <?php 
 
-$host = '185.61.153.117';
-$db = 'attendance';
-$user = 'olivdkff_attendance';
-$pass = 'y19lIohRcEkm';
+$host = 'localhost';
+$db = 'olivdkff_demo';
+$user = 'olivdkff_login';
+$pass = 'SobaGPozwzhf';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
