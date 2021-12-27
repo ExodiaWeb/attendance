@@ -1,14 +1,14 @@
 <?php 
 
-$host = '127.0.0.1';
-$db = 'attendance';
-$user = 'root';
-$pass = '';
+$host = 'sql11.freemysqlhosting.net';
+$db = 'sql11461292';
+$user = 'sql11461292';
+$pass = 'hBhew9lE4j';
 $charset = 'utf8mb4';
+$port = '3306';
 
 
-
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset; port=$port";
 
 try{
     $pdo = new PDO($dsn, $user, $pass);
