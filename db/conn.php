@@ -8,7 +8,7 @@ $charset = 'utf8mb4';
 $port = '3306';
 
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset; port=$port";
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset; port=$port;";
 
 try{
     $pdo = new PDO($dsn, $user, $pass);
