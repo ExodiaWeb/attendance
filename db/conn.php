@@ -1,6 +1,6 @@
 <?php 
 
-$host = 'localhost:3306';
+$host = '185.61.153.117';
 $db = 'olivdkff_demo';
 $user = 'olivdkff_login';
 $pass = 'SobaGPozwzhf';
