@@ -2,6 +2,8 @@
 $title = 'View Record';
 require_once 'includes/header.php';
 require_once 'db/conn.php';
+require_once 'includes/auth_check.php';
+
 
 if (!isset($_GET['id'])) {
     include 'includes/errormessage.php';
@@ -12,6 +14,7 @@ if (!isset($_GET['id'])) {
 
 
 ?>
+    <img src="<?php echo empty($result['avatar_path'])? "uploads/images.jpg":$result['avatar_path']; ?>" alt="avatar" style="width:150px; height:150px;">
     <div class='d-flex justify-content-center my-5'>
         <div class="card" style="width: 18rem;">
             <div class="card-body">
@@ -27,9 +30,9 @@ if (!isset($_GET['id'])) {
             </div>
         </div>
     </div>
-    <br/>
+    <br />
     <div class="">
-        
+
         <a href="viewrecord.php" class="btn btn-info btn-block">Back to list</a>
         <a href="edit.php?id=<?php echo $result['attendee_id'] ?>" class="btn btn-warning btn-block">Edit</a>
         <a onclick="return confirm('Are you sure you want to delete this record?');" href="delete.php?id=<?php echo $result['attendee_id'] ?>" class="btn btn-danger btn-block">Delete</a>

@@ -1,3 +1,5 @@
+<?php include_once 'includes/session.php' ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -23,10 +25,20 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+      <div class="navbar-nav mr-auto">
         <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         <a class="nav-link" href="viewrecords.php">View Attendees</a>
+      </div>
+      <div class="navbar-nav ml-auto">
 
+        <?php 
+          if(!isset($_SESSION['id'])){
+        ?>
+          <a class="nav-item nav-link active text-white font-weight-bold" aria-current="page" href="login.php">Login</a>
+        <?php } else { ?>
+          <span class="nav-link active ">Hi, <?php echo $_SESSION['username'] ?>!</span>
+          <a class="nav-item nav-link active text-white font-weight-bold" aria-current="page" href="logout.php">Logout</a>
+          <?php } ?>
       </div>
     </div>
   </div>
